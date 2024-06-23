@@ -257,6 +257,11 @@ const ui: Registry = {
     type: "components:ui",
     files: ["registry/components/magicui/cool-mode.tsx"],
   },
+  "scroll-progress": {
+    name: "scroll-progress",
+    type: "components:ui",
+    files: ["registry/components/magicui/scroll-progress.tsx"],
+  },
 };
 
 const example: Registry = {
@@ -935,6 +940,14 @@ const example: Registry = {
     files: ["registry/components/example/cool-mode-custom.tsx"],
     component: React.lazy(
       () => import("@/registry/components/example/cool-mode-custom"),
+    ),
+  },
+  "scroll-progress-demo": {
+    name: "scroll-progress-demo",
+    type: "components:example",
+    files: ["registry/components/example/scroll-progress-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/example/scroll-progress-demo"),
     ),
   },
 };
