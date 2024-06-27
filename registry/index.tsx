@@ -257,6 +257,11 @@ const ui: Registry = {
     type: "components:ui",
     files: ["registry/components/magicui/cool-mode.tsx"],
   },
+  "scratch-to-reveal": {
+    name: "scratch-to-reveal",
+    type: "components:ui",
+    files: ["registry/components/magicui/scratch-to-reveal.tsx"],
+  },
 };
 
 const example: Registry = {
@@ -935,6 +940,14 @@ const example: Registry = {
     files: ["registry/components/example/cool-mode-custom.tsx"],
     component: React.lazy(
       () => import("@/registry/components/example/cool-mode-custom"),
+    ),
+  },
+  "scratch-to-reveal-demo": {
+    name: "scratch-to-reveal-demo",
+    type: "components:example",
+    files: ["registry/components/example/scratch-to-reveal-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/example/scratch-to-reveal-demo"),
     ),
   },
 };
